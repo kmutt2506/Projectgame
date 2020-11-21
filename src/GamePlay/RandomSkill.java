@@ -1,6 +1,6 @@
 package GamePlay;
 
 
-public class RandomSkill {
-  
+public enum RandomSkill {
+  FireBall,HealingTouch,GreaterHeal,Recovery,ThunderBolt,WindCutter,WaterGun,FrostBite,FrostShot,HolyLight
 }
