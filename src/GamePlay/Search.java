@@ -11,5 +11,10 @@ package GamePlay;
  * @author HP
  */
 public class Search {
+    public String skill_1;
+    public String skill_2;
+    public Search(){
+        
+    }
     
 }
