@@ -6,15 +6,15 @@ public class Skill {
     
     public Skill(){
         String usedSkill;
-        if(player1 == usedSkill){
+        //if(player1 == usedSkill){
             
-        switch(usedSkill = RandomSkill.values()[count]){
+        //switch(usedSkill = RandomSkill.values()[count]){
             
-            case "FireBall":
+            //case "FireBall":
         }
         
                 
                 
     }      
-}
-}
+//}
+//}
