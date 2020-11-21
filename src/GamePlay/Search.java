@@ -36,5 +36,13 @@ public class Search {
             }
         }
 }
+    public static void main(String[] args) {
+        Search n = new Search();
+        
+        System.out.println("Skill:" + n.skill_1 + ", " + n.skill_2);
+        n.Activate();
+        System.out.println("Skill:" + n.skill_1 + ", " + n.skill_2);
+       
+    }
     
 }
