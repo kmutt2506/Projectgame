@@ -10,6 +10,7 @@ public class Stat {
     public Stat() {
         this.hp1 = 100;
         this.hp2 = 100;
+       
     }
     public int getHp1(){
         return hp1;
