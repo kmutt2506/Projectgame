@@ -59,6 +59,7 @@ public class ProjectGame {
                                else if(currenthp1 > currenthp2){
                                    System.out.println("Player 1 WIN!!! CONGRATS");
                                }else System.out.println("Player 2 WIN!!! CONGRATS");
+                               System.out.println("Do you want to ");
                                 
                     break;
                 }
