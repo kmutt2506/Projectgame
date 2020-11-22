@@ -4,7 +4,7 @@ import Player.Stat;
 
 public class Skill {
 
-    private Stat stat;
+    private Stat stat = new Stat();
     private int skillOutput = 0;
 
     /*public Skill() {
@@ -12,11 +12,12 @@ public class Skill {
     }*/
     
     public int AttackFormPlayer1() {
-        return stat.Attack() - stat.getHp2();
+        
+        return stat.getHp2() - stat.Attack();
     }
 
     public int AttackFormPlayer2() {
-        return stat.Attack() - stat.getHp1();
+        return  stat.getHp1() - stat.Attack();
     }
     
     
