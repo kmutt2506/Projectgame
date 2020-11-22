@@ -26,34 +26,34 @@ public class Skill {
         
         switch(skill.skill_1){
             case "FireBall" :
-                skillOutput = stat.FireBall() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.FireBall();
                 break;
             case "ThunderBolt" :
-                skillOutput = stat.ThunderBolt() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.ThunderBolt();
                 break;
             case "WindCutter" :
-                skillOutput = stat.WindCutter() - stat.getHp1();
+                skillOutput = stat.getHp1()  - stat.WindCutter();
                 break;
             case "WaterGun" :
-                skillOutput = stat.WaterGun() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.WaterGun();
                 break;
             case "FrostBite" :
-                skillOutput = stat.FrostBite() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.FrostBite();
                 break;
             case "LifeDrain" :
-                skillOutput = stat.LifeDrain() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.LifeDrain();
                 break;
             case "HolyLight" :
-                skillOutput = stat.HolyLight() - stat.getHp1();
+                skillOutput = stat.getHp1() - stat.HolyLight(); 
                 break;
             case "HealingTouch" :
-                skillOutput = stat.HealingTouch() + stat.getHp1();
+                skillOutput = stat.getHp1() + stat.HealingTouch();
                 break;
             case "GreaterHeal" :
-                skillOutput = stat.GreaterHeal() + stat.GreaterHeal();
+                skillOutput = stat.getHp1()+ stat.GreaterHeal();
                 break;
             case "Recovery" :
-                skillOutput = stat.Recovery() + stat.Recovery();
+                skillOutput = stat.getHp1()+ stat.Recovery();
                 break;
         }
         return skillOutput;
