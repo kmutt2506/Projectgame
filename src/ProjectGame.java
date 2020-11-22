@@ -6,9 +6,9 @@ public class ProjectGame {
         public static void main(String[] args) {
             Scanner menu = new Scanner(System.in);
             int ans;
+            int p1, p2;
             int currenthp1 = 100;
             int currenthp2 = 100;
-            int p1, p2;
             String name;
             Menu interf = new Menu();
             Stat hp = new Stat();
@@ -51,7 +51,7 @@ public class ProjectGame {
                                         //break;
                                 }
                                 System.out.println("Result Player 1 Hp : " + currenthp1 + "\n" + "       " + "Player 2 Hp : " + currenthp2);
-                               }while(hp.getHp1() != 0 || hp.getHp2() !=0);
+                               }while(currenthp1 != 0 || currenthp2 !=0);
                                if(hp.getHp1()==hp.getHp2()){
                                    System.out.println("******DRAW!!!******");
                                }
