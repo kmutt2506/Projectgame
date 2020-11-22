@@ -33,9 +33,9 @@ public class ProjectGame {
                                 switch(p1){
                                     case 1 : currenthp2 = ski.AttackFormPlayer1();
                                          break;
-                                    case 2 : currenthp2 = ski.SkillOutput();
+                                    case 2 : currenthp2 = ski.SkillOutput1();
                                          break;
-                                    case 3 : currenthp2 = ski.SkillOutput();
+                                    case 3 : currenthp2 = ski.SkillOutput2();
                                         break;
                                     //case 4 : skill.Activate();
                                         //break;
@@ -43,9 +43,9 @@ public class ProjectGame {
                                 switch(p2){
                                     case 1: currenthp1 = ski.AttackFormPlayer2();
                                         break;
-                                    case 2 : currenthp1 = ski.SkillOutput();
+                                    case 2 : currenthp1 = ski.SkillOutput1();
                                          break;
-                                    case 3 : currenthp1 = ski.SkillOutput();
+                                    case 3 : currenthp1 = ski.SkillOutput2();
                                         break;
                                     //case 4 : skill.Activate();
                                         //break;

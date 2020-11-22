@@ -6,87 +6,171 @@ import Player.Stat;
 public class SkillPlayer2 {
     private Stat stat = new Stat();
     private int skillOutput = 0;
+    private int currenthp1=stat.getHp1();
+    private int currenthp2 = stat.getHp2();
+    private Menu ski;
 
-    /*public Skill() {
-        stat = new Stat();
-    }*/
-    
     public int AttackFormPlayer2() {
-        return  stat.getHp1() - stat.Attack();
+        currenthp1 -= stat.Attack();
+        return  currenthp1;
     }
     
     
     public int SkillOutput1(){
-        Search skill = new Search();
+        ski = new Menu();
         
-        switch(skill.skill_1){
+        switch(ski.skill_1){
             case "FireBall" :
-                skillOutput = stat.getHp1() - stat.FireBall();
+                if(currenthp1 <= 16){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.FireBall();
+                }
                 break;
             case "ThunderBolt" :
-                skillOutput = stat.getHp1() - stat.ThunderBolt();
+                if(currenthp1 <= 20){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.ThunderBolt();
+                }
                 break;
             case "WindCutter" :
-                skillOutput = stat.getHp1()  - stat.WindCutter();
+                if(currenthp1 <= 8){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1()  - stat.WindCutter();
+                }
                 break;
             case "WaterGun" :
-                skillOutput = stat.getHp1() - stat.WaterGun();
+                if(currenthp1 <= 12){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.WaterGun();
+                }
                 break;
+                
             case "FrostBite" :
-                skillOutput = stat.getHp1() - stat.FrostBite();
+                if(currenthp1 <= 7){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.FrostBite();
+                }
                 break;
             case "LifeDrain" :
-                skillOutput = stat.getHp1() - stat.LifeDrain();
+                if(currenthp1 <= 10){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.LifeDrain();
+                }
                 break;
             case "HolyLight" :
-                skillOutput = stat.getHp1() - stat.HolyLight(); 
+                if(currenthp1 <= 25){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.HolyLight();
+                }
                 break;
             case "HealingTouch" :
-                skillOutput = stat.getHp2() + stat.HealingTouch();
+                if(currenthp2 >= 90){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2() + stat.HealingTouch();
+                }
                 break;
+                
             case "GreaterHeal" :
-                skillOutput = stat.getHp2()+ stat.GreaterHeal();
+                if(currenthp2 >= 86){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2()+ stat.GreaterHeal();
+                }
                 break;
             case "Recovery" :
-                skillOutput = stat.getHp2()+ stat.Recovery();
+                if(currenthp2 >= 82){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2()+ stat.Recovery();
+                }
                 break;
         }
         return skillOutput;
     }
     
     public int SkillOutput2(){
-        Search skill = new Search();
+        ski = new Menu();
         
-        switch(skill.skill_2){
+        switch(ski.skill_2){
             case "FireBall" :
-                skillOutput = stat.getHp1() - stat.FireBall();
+                if(currenthp1 <= 16){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.FireBall();
+                }
                 break;
             case "ThunderBolt" :
-                skillOutput = stat.getHp1() - stat.ThunderBolt();
+                if(currenthp1 <= 20){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.ThunderBolt();
+                }
                 break;
             case "WindCutter" :
-                skillOutput = stat.getHp1()  - stat.WindCutter();
+                if(currenthp1 <= 8){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1()  - stat.WindCutter();
+                }
                 break;
             case "WaterGun" :
-                skillOutput = stat.getHp1() - stat.WaterGun();
+                if(currenthp1 <= 12){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.WaterGun();
+                }
                 break;
+                
             case "FrostBite" :
-                skillOutput = stat.getHp1() - stat.FrostBite();
+                if(currenthp1 <= 7){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.FrostBite();
+                }
                 break;
             case "LifeDrain" :
-                skillOutput = stat.getHp1() - stat.LifeDrain();
+                if(currenthp1 <= 10){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.LifeDrain();
+                }
                 break;
             case "HolyLight" :
-                skillOutput = stat.getHp1() - stat.HolyLight(); 
+                if(currenthp1 <= 25){
+                    skillOutput = 0;
+                }else{
+                    skillOutput = stat.getHp1() - stat.HolyLight();
+                }
                 break;
             case "HealingTouch" :
-                skillOutput = stat.getHp2() + stat.HealingTouch();
+                if(currenthp2 >= 90){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2() + stat.HealingTouch();
+                }
                 break;
+                
             case "GreaterHeal" :
-                skillOutput = stat.getHp2()+ stat.GreaterHeal();
+                if(currenthp2 >= 86){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2()+ stat.GreaterHeal();
+                }
                 break;
             case "Recovery" :
-                skillOutput = stat.getHp2()+ stat.Recovery();
+                if(currenthp2 >= 82){
+                    skillOutput = stat.getHp2();
+                }else{
+                    skillOutput = stat.getHp2()+ stat.Recovery();
+                }
                 break;
         }
         return skillOutput;

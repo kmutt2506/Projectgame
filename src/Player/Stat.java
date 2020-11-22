@@ -10,6 +10,7 @@ public class Stat {
     public Stat() {
         this.hp1 = 100;
         this.hp2 = 100;
+       
     }
     public int getHp1(){
         return hp1;
@@ -26,7 +27,7 @@ public class Stat {
         return dmg;
     }
     public int ThunderBolt() {
-       dmg = 17;
+       dmg = 20;
         return dmg;
     }
     public int WindCutter() {
@@ -40,7 +41,7 @@ public class Stat {
     }
 
     public int FrostBite() {
-        dmg = 15;
+        dmg = 7;
         return dmg;
     }
 
@@ -50,7 +51,7 @@ public class Stat {
     }
 
     public int HolyLight() {
-       dmg = 3;
+       dmg = 25;
         return dmg;
     }
 
