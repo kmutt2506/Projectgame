@@ -6,13 +6,15 @@ import Player.Stat;
 public class SkillPlayer2 {
     private Stat stat = new Stat();
     private int skillOutput = 0;
+    private int currenthp1=stat.getHp1();
 
     /*public Skill() {
         stat = new Stat();
     }*/
     
     public int AttackFormPlayer2() {
-        return  stat.getHp1() - stat.Attack();
+        currenthp1-= stat.Attack();
+        return  currenthp1;
     }
     
     
