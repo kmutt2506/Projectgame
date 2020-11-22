@@ -14,7 +14,8 @@ public class ProjectGame {
             Stat hp = new Stat();
             Search skill = new Search();
             
-            Skill ski = new Skill();
+            SkillPlayer1 skill_1 = new SkillPlayer1();
+            SkillPlayer2 skill_2 = new SkillPlayer2();
             
             
                 System.out.println("*********Menu*********");
@@ -31,31 +32,31 @@ public class ProjectGame {
                                 System.out.println("\nPlayer 2 {Hp : " + currenthp2 +"}\n" + interf.inMenu());
                                 p2 = menu.nextInt();
                                 switch(p1){
-                                    case 1 : currenthp2 = ski.AttackFormPlayer1();
+                                    case 1 : currenthp2 = skill_1.AttackFormPlayer1();
                                          break;
-                                    case 2 : currenthp2 = ski.SkillOutput();
+                                    case 2 : currenthp2 = skill_1.SkillOutput1();
                                          break;
-                                    case 3 : currenthp2 = ski.SkillOutput();
+                                    case 3 : currenthp2 = skill_1.SkillOutput2();
                                         break;
                                     //case 4 : skill.Activate();
                                         //break;
                                 }
                                 switch(p2){
-                                    case 1: currenthp1 = ski.AttackFormPlayer2();
+                                    case 1: currenthp1 = skill_2.AttackFormPlayer2();
                                         break;
-                                    case 2 : currenthp1 = ski.SkillOutput();
+                                    case 2 : currenthp1 = skill_2.SkillOutput1();
                                          break;
-                                    case 3 : currenthp1 = ski.SkillOutput();
+                                    case 3 : currenthp1 = skill_2.SkillOutput2();
                                         break;
                                     //case 4 : skill.Activate();
                                         //break;
                                 }
                                 System.out.println("Result Player 1 Hp : " + currenthp1 + "\n" + "       " + "Player 2 Hp : " + currenthp2);
                                }while(currenthp1 != 0 || currenthp2 !=0);
-                               if(hp.getHp1()==hp.getHp2()){
+                               if(currenthp1==currenthp2){
                                    System.out.println("******DRAW!!!******");
                                }
-                               else if(hp.getHp1()>hp.getHp2()){
+                               else if(currenthp1 > currenthp2){
                                    System.out.println("Player 1 WIN!!! CONGRATS");
                                }else System.out.println("Player 2 WIN!!! CONGRATS");
                                 
