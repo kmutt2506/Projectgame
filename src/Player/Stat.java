@@ -54,19 +54,4 @@ public class Stat {
         return dmg;
     }
 
-    public int HealingTouch() {
-        heal = 10;
-        return heal;
-    }
-
-    public int GreaterHeal() {
-        heal = 14;
-        return heal;
-    }
-
-    public int Recovery() {
-        heal = 18;
-        return heal;
-    }
-
 }
