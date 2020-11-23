@@ -15,30 +15,30 @@ public class ProjectGame {
         int currenthp1 = hp.getHp1();
         int currenthp2 = hp.getHp2();
 
-        System.out.println(" ︻︻︻︻︻︻︻︻︻︻︻︻︻\n"
+        System.out.println(" ---------------------\n"
                          + " |      - Menu -     |\n"
                          + " |  1.Play           |\n"
                          + " |  2.Exit           |\n"
-                         + " ︼︼︼︼︼︼︼︼︼︼︼︼︼");
+                         + " ---------------------");
         System.out.print(" Select : ");
         ans = menu.nextLine();
         
         switch (ans) {
             case "1":
                 do {
-                    System.out.print("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
+                    System.out.print("--------------------------------\n"
                             +"\nPlayer 1 {Hp : " + currenthp1 + "}\n" + "1.Attack\n"
                             + "2.First Skill : " + SkillPlayer1.ski.skill_1  + "\n"
                             + "3.Second Skill : " + SkillPlayer1.ski.skill_2 + "\n"
                             + "Select : ");
                     p1 = menu.nextInt();
-                    System.out.println("\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+                    System.out.println("\n--------------------------------");
                     System.out.print("\nPlayer 2 {Hp : " + currenthp2 + "}\n" + "1.Attack\n"
                             + "2.First Skill : " + SkillPlayer2.ski.skill_1 + "\n"
                             + "3.Second Skill : " + SkillPlayer2.ski.skill_2 + "\n"
                             + "Select : ");
                     p2 = menu.nextInt();
-                    System.out.println("\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+                    System.out.println("\n--------------------------------");
                     switch (p1) {
                         case 1:
                             currenthp2 = skill01.AttackFormPlayer1();
@@ -80,17 +80,17 @@ public class ProjectGame {
                                 + "       " + "Player 2 Hp : " + currenthp2);
                 } while (currenthp1 != 0 && currenthp2 != 0);
                 if (currenthp1 == currenthp2) {
-                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
-                                      +"\n             DRAW!!!\n"
-                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+                    System.out.println("--------------------------------\n"
+                                      +"\n          DRAW!!!\n"
+                                      +"\n--------------------------------");
                 } else if (currenthp1 > currenthp2) {
-                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
-                                      +"\n      Player 1 WIN!!! CONGRATS\n"
-                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+                    System.out.println("--------------------------------\n"
+                                      +"\n  Player 1 WIN!!! CONGRATS\n"
+                                      +"\n--------------------------------");
                 } else {
-                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
-                                      +"\n      Player 2 WIN!!! CONGRATS\n"
-                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+                    System.out.println("--------------------------------\n"
+                                      +"\n  Player 2 WIN!!! CONGRATS\n"
+                                      +"\n--------------------------------");
                }
                 break;
             case "2" : 
