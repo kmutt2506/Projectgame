@@ -27,7 +27,7 @@ public class Stat {
         return dmg;
     }
     public int ThunderBolt() {
-       dmg = 17;
+       dmg = 20;
         return dmg;
     }
     public int WindCutter() {
@@ -41,33 +41,42 @@ public class Stat {
     }
 
     public int FrostBite() {
-        dmg = 15;
+        dmg = 7;
         return dmg;
     }
 
     public int LifeDrain() {
-        dmg = 10;
+        dmg = 11;
         return dmg;
     }
 
     public int HolyLight() {
-       dmg = 3;
+       dmg = 25;
         return dmg;
     }
-
-    public int HealingTouch() {
-        heal = 10;
-        return heal;
+    
+    public int Poison() {
+       dmg = 17;
+        return dmg;
     }
-
-    public int GreaterHeal() {
-        heal = 14;
-        return heal;
+    public int Slap() {
+       dmg = 1;
+        return dmg;
     }
-
-    public int Recovery() {
-        heal = 18;
-        return heal;
+    public int SonicWave() {
+       dmg = 13;
+        return dmg;
     }
-
+    public int Bite() {
+       dmg = 5;
+        return dmg;
+    }
+    public int DynamicPunch() {
+       dmg = 18;
+        return dmg;
+    }
+     public int JumpKick() {
+       dmg = 14;
+        return dmg;
+    }
 }

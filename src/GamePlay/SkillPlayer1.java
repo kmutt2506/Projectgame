@@ -5,92 +5,107 @@ import Player.Stat;
 public class SkillPlayer1 {
 
     private Stat stat = new Stat();
-    private int skillOutput = 0;
-    private int currenthp2 = stat.getHp2();
 
-    /*public SkillPlayer1() {
-        stat = new Stat();
-    }*/
-    
+    private int currenthp2 = stat.getHp2();
+    public static RandomSkill ski = new RandomSkill();
+
     public int AttackFormPlayer1() {
         currenthp2 -= stat.Attack();
-        return  currenthp2;
+        return currenthp2;
     }
 
-    
-    public int SkillOutput1(){
-        Search skill = new Search();
-        
-        switch(skill.skill_1){
-            case "FireBall" :
-                skillOutput = stat.getHp2() - stat.FireBall();
+    public int SkillOutput1() {
+
+        switch (ski.skill_1) {
+            case "FireBall":
+                currenthp2 -= stat.FireBall();
                 break;
-            case "ThunderBolt" :
-                skillOutput = stat.getHp2() - stat.ThunderBolt();
+            case "ThunderBolt":
+                currenthp2 -= stat.ThunderBolt();
                 break;
-            case "WindCutter" :
-                skillOutput = stat.getHp2()  - stat.WindCutter();
+            case "WindCutter":
+                currenthp2 -= stat.WindCutter();
                 break;
-            case "WaterGun" :
-                skillOutput = stat.getHp2() - stat.WaterGun();
+            case "WaterGun":
+                currenthp2 -= stat.WaterGun();
                 break;
-            case "FrostBite" :
-                skillOutput = stat.getHp2() - stat.FrostBite();
+            case "FrostBite":
+                currenthp2 -= stat.FrostBite();
                 break;
-            case "LifeDrain" :
-                skillOutput = stat.getHp2() - stat.LifeDrain();
+            case "LifeDrain":
+                currenthp2 -= stat.LifeDrain();
                 break;
-            case "HolyLight" :
-                skillOutput = stat.getHp2() - stat.HolyLight(); 
+            case "HolyLight":
+                currenthp2 -= stat.HolyLight();
                 break;
-            case "HealingTouch" :
-                skillOutput = stat.getHp1() + stat.HealingTouch();
+            case "Poison":
+                currenthp2 -= stat.Poison();
                 break;
-            case "GreaterHeal" :
-                skillOutput = stat.getHp1()+ stat.GreaterHeal();
+            case "Slap":
+                currenthp2 -= stat.Slap();
                 break;
-            case "Recovery" :
-                skillOutput = stat.getHp1()+ stat.Recovery();
+            case "SonicWave":
+                currenthp2 -= stat.SonicWave();
+                break;
+            case "Bite":
+                currenthp2 -= stat.Bite();
+                break;
+            case "DynamicPunch":
+                currenthp2 -= stat.DynamicPunch();
+                break;
+            case "JumpKick":
+                currenthp2 -= stat.JumpKick();
                 break;
         }
-        return skillOutput;
+        ski = new RandomSkill();
+        return currenthp2;
     }
-    
-    public int SkillOutput2(){
-        Search skill = new Search();
-        
-        switch(skill.skill_2){
-            case "FireBall" :
-                skillOutput = stat.getHp2() - stat.FireBall();
+
+    public int SkillOutput2() {
+
+        switch (ski.skill_2) {
+            case "FireBall":
+                currenthp2 -= stat.FireBall();
                 break;
-            case "ThunderBolt" :
-                skillOutput = stat.getHp2() - stat.ThunderBolt();
+            case "ThunderBolt":
+                currenthp2 -= stat.ThunderBolt();
                 break;
-            case "WindCutter" :
-                skillOutput = stat.getHp2()  - stat.WindCutter();
+            case "WindCutter":
+                currenthp2 -= stat.WindCutter();
                 break;
-            case "WaterGun" :
-                skillOutput = stat.getHp2() - stat.WaterGun();
+            case "WaterGun":
+                currenthp2 -= stat.WaterGun();
                 break;
-            case "FrostBite" :
-                skillOutput = stat.getHp2() - stat.FrostBite();
+            case "FrostBite":
+                currenthp2 -= stat.FrostBite();
                 break;
-            case "LifeDrain" :
-                skillOutput = stat.getHp2() - stat.LifeDrain();
+            case "LifeDrain":
+                currenthp2 -= stat.LifeDrain();
                 break;
-            case "HolyLight" :
-                skillOutput = stat.getHp2() - stat.HolyLight(); 
+            case "HolyLight":
+                currenthp2 -= stat.HolyLight();
                 break;
-            case "HealingTouch" :
-                skillOutput = stat.getHp1() + stat.HealingTouch();
+            case "Poison":
+                currenthp2 -= stat.Poison();
                 break;
-            case "GreaterHeal" :
-                skillOutput = stat.getHp1()+ stat.GreaterHeal();
+            case "Slap":
+                currenthp2 -= stat.Slap();
                 break;
-            case "Recovery" :
-                skillOutput = stat.getHp1()+ stat.Recovery();
+            case "SonicWave":
+                currenthp2 -= stat.SonicWave();
+                break;
+            case "Bite":
+                currenthp2 -= stat.Bite();
+                break;
+            case "DynamicPunch":
+                currenthp2 -= stat.DynamicPunch();
+                break;
+            case "JumpKick":
+                currenthp2 -= stat.JumpKick();
                 break;
         }
-        return skillOutput;
+        ski = new RandomSkill();
+        return currenthp2;
+
     }
 }
