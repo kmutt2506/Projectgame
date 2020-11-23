@@ -10,7 +10,7 @@ public class ProjectGame {
         Stat hp = new Stat();
         SkillPlayer1 skill01 = new SkillPlayer1();
         SkillPlayer2 skill02 = new SkillPlayer2();
-        int ans;
+        String ans;
         int p1, p2;
         int currenthp1 = hp.getHp1();
         int currenthp2 = hp.getHp2();
@@ -21,10 +21,10 @@ public class ProjectGame {
                          + " |  2.Exit           |\n"
                          + " ︼︼︼︼︼︼︼︼︼︼︼︼︼");
         System.out.print(" Select : ");
-        ans = menu.nextInt();
-
+        ans = menu.nextLine();
+        
         switch (ans) {
-            case 1:
+            case "1":
                 do {
                     System.out.print("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
                             +"\nPlayer 1 {Hp : " + currenthp1 + "}\n" + "1.Attack\n"
@@ -80,16 +80,24 @@ public class ProjectGame {
                                 + "       " + "Player 2 Hp : " + currenthp2);
                 } while (currenthp1 != 0 && currenthp2 != 0);
                 if (currenthp1 == currenthp2) {
-                    System.out.println("******DRAW!!!******\n");
+                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
+                                      +"\n             DRAW!!!\n"
+                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
                 } else if (currenthp1 > currenthp2) {
-                    System.out.println("Player 1 WIN!!! CONGRATS\n");
+                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
+                                      +"\n      Player 1 WIN!!! CONGRATS\n"
+                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
                 } else {
-                    System.out.println("Player 2 WIN!!! CONGRATS\n");
-
-                }
+                    System.out.println("✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n"
+                                      +"\n      Player 2 WIN!!! CONGRATS\n"
+                                      +"\n✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦");
+               }
                 break;
-
+            case "2" : 
+                break;
+                default:
+                    System.out.println(" ERROR!!!!");
         }
-
+        
     }
 }
