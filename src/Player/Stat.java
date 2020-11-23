@@ -45,7 +45,7 @@ public class Stat {
     }
 
     public int LifeDrain() {
-        dmg = 10;
+        dmg = 11;
         return dmg;
     }
 
@@ -53,5 +53,29 @@ public class Stat {
        dmg = 25;
         return dmg;
     }
-
+    
+    public int Poison() {
+       dmg = 17;
+        return dmg;
+    }
+    public int Slap() {
+       dmg = 1;
+        return dmg;
+    }
+    public int SonicWave() {
+       dmg = 13;
+        return dmg;
+    }
+    public int Bite() {
+       dmg = 5;
+        return dmg;
+    }
+    public int DynamicPunch() {
+       dmg = 18;
+        return dmg;
+    }
+     public int JumpKick() {
+       dmg = 14;
+        return dmg;
+    }
 }
